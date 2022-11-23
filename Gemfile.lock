@@ -239,6 +239,7 @@ GEM
 PLATFORMS
   linux
   linux-unknown
+  ruby
   unknown
   x86_64-darwin-17
   x86_64-linux
