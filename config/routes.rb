@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'root#index'
+  root 'api/v1/cheers#index'
 
   namespace :api do
     namespace :v1 do
