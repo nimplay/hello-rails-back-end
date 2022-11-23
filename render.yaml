@@ -1,11 +1,11 @@
 databases:
-  - name: mysite
-    databaseName: mysite
+  - name: hello_rails_back_end
+    databaseName: hello_rails_back_end
     user: mysite
 
 services:
   - type: web
-    name: mysite
+    name: hello_rails_back_end
     env: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
