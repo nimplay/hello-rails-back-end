@@ -2,6 +2,7 @@ databases:
   - name: postgres
     databaseName: hello_rails_back_end
     user: postgres
+    Port: 5433
 
 services:
   - type: web
