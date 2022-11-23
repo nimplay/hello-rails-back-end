@@ -1,14 +1,14 @@
 databases:
   - name: postgres
     databaseName: hello_rails_back_end
-    user: mysite
+    user: postgres
 
 services:
   - type: web
     name: hello_rails_back_end
     env: ruby
     buildCommand: "./bin/render-build.sh"
-    startCommand: "bundle exec rails s"
+    startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
@@ -16,6 +16,3 @@ services:
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
-- type: redis
-  name: redis
-  plan: free
