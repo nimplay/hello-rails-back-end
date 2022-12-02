@@ -8,7 +8,7 @@ development:
   database: hello_rails_back_end_development
   username: postgres
   password: 1234
-  port: 5433
+  port: 5432
   host: localhost
 
 test:
@@ -16,11 +16,8 @@ test:
   database: hello_rails_back_end_test
   username: postgres
   password: 1234
-  port: 5433
+  port: 5432
 
 production:
   <<: *default
-  url: <%= ENV["MY_APP_DATABASE_URL"]%>
-  database: hello_rails_back_end_production
-  username: hello_rails_back_end
-  password: <%= ENV["HELLO_RAILS_BACK_END_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"]%>
