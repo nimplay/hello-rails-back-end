@@ -73,5 +73,5 @@ end
 
 gem 'esbuild-rails', '~> 0.1.4'
 gem 'jsbundling-rails'
-gem 'rubocop', '>= 1.0', '< 2.0'
 gem 'rack-cors'
+gem 'rubocop', '>= 1.0', '< 2.0'
